@@ -2,16 +2,13 @@
 
 # Présentation
 
-![speaker](./assets/images/jf.jpg)
+![speaker](./assets/images/jsa.jpeg)
 ![badge](./assets/images/gde.png)
 ![company](./assets/images/logo-sfeir-blanc.png)
 
-## Jean-François Garreau
+## Julien Samson
 
-### CTO front
+### Backend tech lead
 
 <!-- .element: class="icon-rule icon-first" -->
 
-### @jefbinomed
-
-<!-- .element: class="icon-twitter icon-second" -->

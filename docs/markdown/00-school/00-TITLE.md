@@ -1,8 +1,8 @@
-<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="xxx" -->
+<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="kotlin" -->
 
 # **Welcome to SFEIR School**
 
-## **XXX 200**
+## **Kotlin 200**
 
 ##==##
 
@@ -41,3 +41,7 @@ Tour de table ...
 **Feuille de présence (obligatoire)** <!-- .element: class="center" -->
 
 https://bit.ly/sfeir-xxx <!-- .element: class="center" -->
+
+**Openfeedback**
+
+
