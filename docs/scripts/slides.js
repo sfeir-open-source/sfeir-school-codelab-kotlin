@@ -1,21 +1,48 @@
-import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
+import {SfeirThemeInitializer} from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
 
 // One method per module
 function schoolSlides() {
-  return ['00-school/00-TITLE.md', '00-school/speaker.md'];
+  return [
+    '00-school/00-intro.md',
+    '00-school/speaker.md'
+  ];
 }
 
 function introSlides() {
-  return ['intro/00-TITLE.md'];
+  return [
+    'intro/00-intro.md',
+    'intro/01-interoperabilite.md',
+    'intro/02-null-safety.md',
+    'intro/02-when-1.md',
+    'intro/02-when-2.md',
+    'intro/03-smart-cast.md',
+    'intro/04-function.md',
+    'intro/04-function-extension.md',
+  ];
 }
+
+function orienteObjetSlides() {
+  return [
+    'oriente_objet/00-intro.md',
+    'oriente_objet/03-class-1.md',
+    'oriente_objet/03-class-2.md',
+    'oriente_objet/03-object-1.md',
+    'oriente_objet/03-object-2.md',
+    'oriente_objet/03-object-3.md',
+    'oriente_objet/04-sealed-class-1.md',
+    'oriente_objet/04-sealed-class-2.md',
+  ];
+}
+
 
 function formation() {
   return [
     //
     ...schoolSlides(), //
     ...introSlides(), //
+    ...orienteObjetSlides(), //
   ].map((slidePath) => {
-    return { path: slidePath };
+    return {path: slidePath};
   });
 }
 
