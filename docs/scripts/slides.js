@@ -3,7 +3,7 @@ import {SfeirThemeInitializer} from '../web_modules/sfeir-school-theme/sfeir-sch
 // One method per module
 function schoolSlides() {
   return [
-    '00-school/00-intro.md',
+    '00-school/00-kotlin.md',
     '00-school/speaker.md'
   ];
 }
