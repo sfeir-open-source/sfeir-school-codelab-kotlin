@@ -32,6 +32,7 @@ function orienteObjetSlides() {
     'oriente_objet/03-object-3.md',
     'oriente_objet/04-sealed-class-1.md',
     'oriente_objet/04-sealed-class-2.md',
+    'oriente_objet/05-data-class.md',
   ];
 }
 
