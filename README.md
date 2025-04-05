@@ -3,6 +3,7 @@
 ### prerequisites
 
 - A github account
+- Some knowledge of Java
 - a jdk 21 installed (if needed you can use [sdkman](https://sdkman.io/) to install it)
 - a gradle 8.4 installed (if needed you can use [sdkman](https://sdkman.io/) to install it)
 - a kotlin 1.9.0 installed (if needed you can use [sdkman](https://sdkman.io/) to install it)

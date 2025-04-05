@@ -2,7 +2,7 @@
 
 # **Welcome to SFEIR School**
 
-## **Kotlin 200**
+## **Kotlin for Java developper**
 
 ##==##
 
