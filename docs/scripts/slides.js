@@ -18,6 +18,7 @@ function introSlides() {
     'intro/03-smart-cast.md',
     'intro/04-function.md',
     'intro/04-function-extension.md',
+    'intro/05-exercise.md',
   ];
 }
 

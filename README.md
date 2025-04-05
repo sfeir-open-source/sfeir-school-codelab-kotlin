@@ -1,50 +1,29 @@
-# About (Part to remove)
+# Codelab SFEIR School - Kotlin
 
-Template repository for SFEIR School, this template could be use to start a school with revealJS and SFEIR School theme
+### prerequisites
 
-Don't forget to replace all xxx by your techno
+- A github account
+- a jdk 21 installed (if needed you can use [sdkman](https://sdkman.io/) to install it)
+- a gradle 8.4 installed (if needed you can use [sdkman](https://sdkman.io/) to install it)
+- a kotlin 1.9.0 installed (if needed you can use [sdkman](https://sdkman.io/) to install it)
+- a kotlin IDE : [Intellij](https://www.jetbrains.com/fr-fr/idea/)
 
-## Files to changes
+## Plan
 
-- `docs/scss/slides.scss` you could put here all your custom styles
-- `docs/scripts/slides.js` you will reference all the markdown here. Don't forget to have 1 function per chapter (module).
-- `docs/index.html` you should reference the correct technology in header
+- [ ] School Introduction
+- [ ] Kotlin Introduction
+- [ ] Kotlin Codelab 01 : Fizzbuzz
+- [ ] Kotlin presentation: Object
+- [ ] Kotlin Codelab 02 : Book store
+- [ ] Kotlin presentation: To Be Defined
+- [ ] Kotlin Codelab 03 : To Be Defined
 
-## To helps you
 
-Video to help you to create your slides with revealJS
+# Slides on github
 
-[![video of how to do a sfeir school](https://img.youtube.com/vi/v4WuJIwf4lc/0.jpg)](https://www.youtube.com/watch?v=v4WuJIwf4lc)
+You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-codelab-kotlin/#/).
 
-You could also look at documentation of school theme : https://github.com/sfeir-open-source/sfeir-school-theme
-
-## Tasks to do
-
-- [] Change the files (cf before)
-- [] Replace all xxx by your techno
-- [] Remove this part of README
-- [] Complete the README with your content
-- [] Check that the github pages is pointing to `/docs` directory
-
-# Content of README
-
-The text below is the template you could use for your readme
-
-# SFEIR School XXX
-
-<p align="center">
- <img style="display:block" width="20%" height="20%" src="./docs/assets/images/sfeir-school-logo.png" alt="SFEIR School logo">
-</p>
-
-<br/>
-
-[Discover the SFEIR Schools](https://www.sfeir.com/fr/le-contenus-dexperts-de-la-technologie-et-de-linnovation/formation-gratuite-avec-nos-experts/)
-
-# Slides
-
-You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-xxx/).
-
-## Develop
+## Slides locally
 
 To run docs locally, go in directory `docs` and run `npx serve` of if you don't have node, you can use docker `docker-compose up`, and open slides on http://localhost:4242/.
 
