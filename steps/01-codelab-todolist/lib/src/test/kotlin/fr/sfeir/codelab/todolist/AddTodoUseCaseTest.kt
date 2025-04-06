@@ -81,7 +81,7 @@ class AddTodoUseCaseTest {
     result.shouldBeInstanceOf<AlreadyExists>()
     val found = inMemoryTodoList.getAllOf("1".toUserId())?.first { it.id == "1".toTodoId() } ?: fail()
 
-    found.id shouldNotBe "1".toTodoId()
+    found.id shouldBe "1".toTodoId()
     found.title shouldBe "title"
     found.description shouldBe "description"
 
