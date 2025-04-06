@@ -1,6 +1,7 @@
 package fr.sfeir.codelab.todolist
 
 import fr.sfeir.codelab.todolist.driving.AddTodo.AddCommand.Companion.toAddCommand
+import fr.sfeir.codelab.todolist.driving.AddTodo.AddTodoResult.AlreadyExists
 import fr.sfeir.codelab.todolist.driving.AddTodo.AddTodoResult.Success
 import fr.sfeir.codelab.todolist.model.State
 import fr.sfeir.codelab.todolist.model.Todo
@@ -74,7 +75,7 @@ class AddTodoUseCaseTest {
         )).toAddCommand()
     )
 
-    result.shouldBeInstanceOf<Success>()
+    result.shouldBeInstanceOf<AlreadyExists>()
     inMemoryTodoList.getBy("1".toUserId(), "1".toTodoId())?.let {
       it.title shouldBe "title"
       it.description shouldBe "description"
