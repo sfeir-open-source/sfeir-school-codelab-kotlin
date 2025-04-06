@@ -8,10 +8,16 @@ Les types de données peuvent être non-nullables par défaut, et vous devez exp
 
 fun main() {
   var name: String = "Kotlin"
-  // name = null // Compilation error
+    // name = null // Compilation error
 
   var nullableName: String? = "Kotlin"
-  nullableName = null // No compilation error
+  nullableName = null // No compilation error, code is safe but this a code smell. 
+    // Use it only if you need it (like Optionnal in Java)
+
+  val length = nullableName?.length ?: 0 // Safe call operator & Elvis operator
+  val length2 = nullableName!!.length // Not safe, throws NullPointerException if nullableName is null
+    // bang bang operator is a code smell...
+  
 }
 
 ```
