@@ -2,8 +2,9 @@
 
 Implementez le domaine TodoList:
 
-- [ ] implementer le use case AddTodo
-- [ ] implementer le use case GetTodo
+- [X] implementer le use case AddTodo
+- [X] implementer le use case GetTodo
+- [ ] implementer le use case UpdateTodo
 
 avec le pseudo model suivant:
 
