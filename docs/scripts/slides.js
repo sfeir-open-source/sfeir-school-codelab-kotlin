@@ -21,6 +21,8 @@ function introSlides() {
     'intro/05-exercise.md',
     'intro/06-scope-functions-1.md',
     'intro/06-scope-functions-2.md',
+    'intro/06-scope-functions-3.md',
+    'intro/06-scope-functions-4.md',
     'intro/07-collections.md',
     'intro/08-lambda.md',
     'intro/09-coroutines.md',
