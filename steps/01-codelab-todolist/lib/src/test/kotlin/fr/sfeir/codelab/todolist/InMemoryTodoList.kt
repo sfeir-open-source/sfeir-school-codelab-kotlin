@@ -14,6 +14,7 @@ class InMemoryTodoList : AllTodoList {
     todoList[this] = todos + todo
   }
 
-  override fun getBy(userId: UserId, todoId: TodoId): Todo? = todoList[userId]?.find { it.id == todoId }
-
+  override fun getAllOf(userId: UserId): List<Todo>? {
+    return todoList[userId]
+  }
 }
