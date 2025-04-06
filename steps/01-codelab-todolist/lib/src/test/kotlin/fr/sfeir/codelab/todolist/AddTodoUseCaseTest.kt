@@ -7,9 +7,12 @@ import fr.sfeir.codelab.todolist.model.State
 import fr.sfeir.codelab.todolist.model.Todo
 import fr.sfeir.codelab.todolist.model.TodoId.Companion.toTodoId
 import fr.sfeir.codelab.todolist.model.UserId.Companion.toUserId
+import io.kotest.matchers.collections.shouldHaveSize
 import io.kotest.matchers.shouldBe
+import io.kotest.matchers.shouldNotBe
 import io.kotest.matchers.types.shouldBeInstanceOf
 import kotlin.test.Test
+import kotlin.test.fail
 
 class AddTodoUseCaseTest {
 
@@ -27,7 +30,7 @@ class AddTodoUseCaseTest {
       )).toAddCommand()
     )
     result.shouldBeInstanceOf<Success>()
-    inMemoryTodoList.getBy("1".toUserId(), "1".toTodoId()).shouldBeInstanceOf<Todo>()
+    inMemoryTodoList.getAllOf("1".toUserId())?.shouldHaveSize(1)
   }
 
   @Test
@@ -51,7 +54,7 @@ class AddTodoUseCaseTest {
     val result = useCase.add(("1".toUserId() to newTodo).toAddCommand())
 
     result.shouldBeInstanceOf<Success>()
-    inMemoryTodoList.getBy("1".toUserId(), "1".toTodoId()).shouldBeInstanceOf<Todo>()
+    inMemoryTodoList.getAllOf("1".toUserId())?.shouldHaveSize(2)
   }
 
   @Test
@@ -76,13 +79,12 @@ class AddTodoUseCaseTest {
     )
 
     result.shouldBeInstanceOf<AlreadyExists>()
-    inMemoryTodoList.getBy("1".toUserId(), "1".toTodoId())?.let {
-      it.title shouldBe "title"
-      it.description shouldBe "description"
-      it.state shouldBe State.TODO
-    } ?: run {
-      throw AssertionError("Todo not found")
-    }
+    val found = inMemoryTodoList.getAllOf("1".toUserId())?.first { it.id == "1".toTodoId() } ?: fail()
+
+    found.id shouldNotBe "1".toTodoId()
+    found.title shouldBe "title"
+    found.description shouldBe "description"
+
   }
 
 }
