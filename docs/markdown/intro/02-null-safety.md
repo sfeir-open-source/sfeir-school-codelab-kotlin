@@ -1,8 +1,8 @@
-# Null Safety
+# Null Safety (the billion dollars mistake)
 
 Kotlin introduit une gestion des nulls en toute sécurité, éliminant ainsi les NullPointerException courantes en Java.
 
-Les types de données peuvent être non-nullables par défaut, et vous devez explicitement indiquer si une variable peut être nulle.
+Les types de données sont non-nullables par défaut, et vous devez explicitement indiquer si une variable peut être nulle.
 
 ```kotlin
 

@@ -10,7 +10,8 @@ function schoolSlides() {
 
 function introSlides() {
   return [
-    'intro/00-intro.md',
+    'intro/00-intro-1.md',
+    'intro/00-intro-2.md',
     'intro/01-interoperabilite.md',
     'intro/02-null-safety.md',
     'intro/02-when-1.md',

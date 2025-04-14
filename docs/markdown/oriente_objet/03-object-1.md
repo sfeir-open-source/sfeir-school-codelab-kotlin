@@ -1,4 +1,4 @@
-# Concept d'Object
+# 'Object'
 
 En Kotlin, le mot-clé object permet de créer facilement des singletons, des objets anonymes et des objets compagnons.
 

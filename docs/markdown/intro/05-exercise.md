@@ -1,4 +1,4 @@
-# Exercise
+# TP (01-codelab-fizzbuzz)
 
 Le [FizzBuzz](https://codingdojo.org/fr/kata/FizzBuzz/) :
 Vous devez construire une fonction fizzBuzz qui prend en parametre un entier N et qui affiche pour chaque entier de 1 a N un nombre ou une chaîne de caractère selon les règles suivantes :
