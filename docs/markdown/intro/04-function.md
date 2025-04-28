@@ -18,5 +18,4 @@ fun greet(name: String, greeting: String = "Hello") = "$greeting, $name!"
 // Appel avec paramètres nommés
 greet(greeting = "Hi", name = "John") // "Hi, John!"
 
-
 ```

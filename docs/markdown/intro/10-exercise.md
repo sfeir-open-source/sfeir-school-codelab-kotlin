@@ -1,4 +1,4 @@
-# TP (02-codelab-todolist)
+# TP 2 (02-codelab-todolist)
 
 Implementez le domaine TodoList:
 

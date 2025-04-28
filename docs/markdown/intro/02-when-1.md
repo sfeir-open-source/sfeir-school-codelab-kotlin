@@ -17,6 +17,4 @@ val result = when { // boolean only
   day == "Friday" -> "Fin de semaine"
   else -> "Milieu de semaine"
 }
-
-
 ```

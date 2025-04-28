@@ -16,5 +16,4 @@ fun java.util.Date.isFuture(): Boolean {
   return this.time > System.currentTimeMillis()
 }
 
-
 ```

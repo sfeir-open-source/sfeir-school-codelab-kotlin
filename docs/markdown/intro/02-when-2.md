@@ -3,7 +3,7 @@
 - C'est une expression qui retourne une valeur
 - Pas besoin de break pour éviter la cascade d'exécution
 - Peut tester des conditions complexes, pas seulement l'égalité
-- Vérification d'exhaustivité avec les types scellés
+- Vérification d'exhaustivité avec les types scellés (sera abordé plus loin))
 
 
 ```kotlin
@@ -21,8 +21,6 @@ when (obj) {
   is List<*> -> obj.size
   else -> -1
 }
-
-
 ```
 
 Le when de Kotlin représente une évolution majeure du concept de switch, offrant plus de sécurité et d'expressivité.

@@ -19,5 +19,4 @@ fun main() {
     // bang bang operator is a code smell...
   
 }
-
 ```
