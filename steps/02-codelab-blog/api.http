@@ -1,0 +1,12 @@
+### GET request to example server
+GET http://localhost:8080/api/articles
+
+###
+POST http://localhost:8080/api/articles
+Content-Type: application/json
+
+{
+  "id": "544e0784-1b0f-4e42-af87-6a6fb257303b",
+  "title": "test",
+  "description": "it works"
+}
