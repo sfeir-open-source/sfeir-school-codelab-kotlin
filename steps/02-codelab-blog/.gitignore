@@ -72,6 +72,5 @@ docs/test.html
 #IDE
 .idea/
 *.iml
-
-steps/02-codelab-blog/build/*
-steps/02-codelab-blog/.gradle/
+build/*
+.gradle
